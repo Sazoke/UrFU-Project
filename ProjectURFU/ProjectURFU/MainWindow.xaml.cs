@@ -62,7 +62,7 @@ namespace ProjectURFU
             textBlocks = new List<TextBlock>();
             AddTextBlock(textBlocks);
             for (int i = 0; i < 5; i++)
-                textBlocks[i].Text = game.Text(rnd.Next(0, game.Words.Count));
+                textBlocks[i].Text = game.Text(rnd.Next(1, 5));
         }
         private void ShowResult()
         {
@@ -98,8 +98,12 @@ namespace ProjectURFU
             {
                 var newTextBlock = new TextBlock();
                 newTextBlock.FontSize = 20;
-                newTextBlock.Margin = new Thickness(100 + 100 * i, 150, 500 - 100 * i, 200);
+                newTextBlock.Margin = new Thickness(100 + 100 * i, 150, 600 - 100 * i, 200);
                 newTextBlock.Name = "textBlock" + i.ToString();
+                if(i>0)
+                    newTextBlock.Background = Brushes.White;
+                else
+                    newTextBlock.Background = Brushes.AliceBlue;
                 this.importantGrid.Children.Add(newTextBlock);
                 textBlocks.Add(newTextBlock);
             }
@@ -115,7 +119,10 @@ namespace ProjectURFU
                     wrongs++;
                     return;
                 }
+                textBlocks[nowBlock].Background = Brushes.White;
                 nowBlock++;
+                if(nowBlock < 5)
+                    textBlocks[nowBlock].Background = Brushes.AliceBlue;
                 number = 0;
             }
             else
@@ -123,7 +130,10 @@ namespace ProjectURFU
                 if (number >= textBlocks[nowBlock].Text.Length)
                 {
                     number = 0;
+                    textBlocks[nowBlock].Background = Brushes.White;
                     nowBlock++;
+                    if (nowBlock < 5)
+                        textBlocks[nowBlock].Background = Brushes.AliceBlue;
                     wrongs++;
                     return;
                 }
@@ -137,8 +147,7 @@ namespace ProjectURFU
                 page++;
                 nowBlock = 0;
             }
-
-            if (page == 1)
+            if (page == 5)
                 ShowResult();
         }
     }

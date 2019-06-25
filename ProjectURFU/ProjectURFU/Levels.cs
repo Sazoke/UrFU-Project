@@ -31,7 +31,7 @@ namespace ProjectURFU
         public string Text(int words)
         {
             var result = "";
-            for (int i = 0; i < 1; i++)
+            for (int i = 0; i < words; i++)
             {
                 var j = rnd.Next(0, this.symbols.Count);
                 result += symbols[j];
