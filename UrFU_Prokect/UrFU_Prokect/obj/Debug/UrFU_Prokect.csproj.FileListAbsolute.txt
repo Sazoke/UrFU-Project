@@ -1,0 +1,15 @@
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\bin\Debug\UrFU_Prokect.exe.config
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\bin\Debug\UrFU_Prokect.exe
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\bin\Debug\UrFU_Prokect.pdb
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.csprojAssemblyReference.cache
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\MainWindow.g.cs
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\App.g.cs
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect_MarkupCompile.cache
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect_MarkupCompile.lref
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\MainWindow.baml
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.g.resources
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.Properties.Resources.resources
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.csproj.GenerateResource.cache
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.csproj.CoreCompileInputs.cache
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.exe
+D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\UrFU_Prokect\obj\Debug\UrFU_Prokect.pdb
