@@ -70,12 +70,20 @@ namespace UrFU_Prokect
             var wrongsBlock = new TextBlock();
             wrongsBlock.FontSize = 20;
             wrongsBlock.Margin = new Thickness(400, 200, 300, 100);
-            wrongsBlock.Text = TextBlock.wrongs.ToString();
+            wrongsBlock.Text = GetCountWrongs().ToString();
             this.Grid.Children.Clear();
             this.Grid.Children.Add(timeBlock);
             this.Grid.Children.Add(wrongsBlock);
         }
 
+        private int GetCountWrongs()
+        {
+            var wrongs = 0;
+            for (int i = 0; i < TextBlock.Text.Length; i++)
+                if (TextBlock.Text[i].CompareTo('!') == 0)
+                    wrongs++;
+            return wrongs;
+        }
         private string Time()
         {
             TimeSpan elapsed = DateTime.Now - StartTime;

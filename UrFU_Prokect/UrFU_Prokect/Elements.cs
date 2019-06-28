@@ -52,7 +52,6 @@ namespace Elements
 
     public class MyTextBlock
     {
-        public int wrongs;
         private string beginText;
         private TextBlock textBlock;
         public MyTextBlock()
@@ -89,10 +88,7 @@ namespace Elements
             if (text[textOfBox.Length - 1].CompareTo(textOfBox.Last()) == 0)
                 text[textOfBox.Length - 1] = '*';
             else
-            {
                 text[textOfBox.Length - 1] = '!';
-                wrongs++;
-            }
             textBlock.Text = text.ToString();
             if (textOfBox.Length == beginText.Length)
                 IsEnd = true;
