@@ -65,12 +65,12 @@ namespace UrFU_Prokect
         {
             var timeBlock = new TextBlock();
             timeBlock.FontSize = 20;
-            timeBlock.Margin = new Thickness(350, 100, 300, 200);
+            timeBlock.Margin = new Thickness(300, 100, 300, 200);
             timeBlock.Text = Time();
             var wrongsBlock = new TextBlock();
             wrongsBlock.FontSize = 20;
-            wrongsBlock.Margin = new Thickness(400, 200, 300, 100);
-            wrongsBlock.Text = GetCountWrongs().ToString();
+            wrongsBlock.Margin = new Thickness(300, 200, 300, 100);
+            wrongsBlock.Text = "Wrongs : " + GetCountWrongs().ToString();
             this.Grid.Children.Clear();
             this.Grid.Children.Add(timeBlock);
             this.Grid.Children.Add(wrongsBlock);
@@ -90,6 +90,7 @@ namespace UrFU_Prokect
             string text = "";
             int tenths = elapsed.Milliseconds / 100;
             text +=
+                "Time : " +
                 elapsed.Hours.ToString("00") + ":" +
                 elapsed.Minutes.ToString("00") + ":" +
                 elapsed.Seconds.ToString("00") + "." +

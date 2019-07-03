@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.IO;
+using System.Reflection;
 
 namespace Elements
 {
@@ -62,7 +63,9 @@ namespace Elements
 
         public void SetText(char numberOfText)
         {
-            var str = new StreamReader(@"D:\Projects\UrFu Practic\UrFU-Project\UrFU_Prokect\Текст" + numberOfText + ".txt");
+            var location = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            var path = Path.GetDirectoryName(location);
+            var str = new StreamReader(path + @"\Текст" + numberOfText + ".txt");
             textBlock.Text = str.ReadToEnd();
             beginText = textBlock.Text.ToString();
             textBlock.TextWrapping = System.Windows.TextWrapping.Wrap;
