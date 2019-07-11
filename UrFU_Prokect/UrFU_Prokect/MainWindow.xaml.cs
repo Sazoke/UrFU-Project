@@ -30,6 +30,7 @@ namespace UrFU_Prokect
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            Grid.Children.Clear();
             var buttons = new Buttons();
             foreach (Button button in buttons)
             {
@@ -74,6 +75,12 @@ namespace UrFU_Prokect
             this.Grid.Children.Clear();
             this.Grid.Children.Add(timeBlock);
             this.Grid.Children.Add(wrongsBlock);
+            var backButton = new Button();
+            backButton.Margin = new Thickness(300, 350, 300, 0);
+            backButton.Content = "Back to menu";
+            backButton.FontSize = 20;
+            backButton.Click += Window_Loaded;
+            this.Grid.Children.Add(backButton);
         }
 
         private int GetCountWrongs()
